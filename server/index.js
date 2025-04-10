@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-const allowedOrigins = ['https://portfolio-phillipd44s-projects.vercel.app'];
+const allowedOrigins = ['https://portfolio-phillipd44s-projects.vercel.app', 'https://www.phillipdesrochers.com'];
 
 const app = express();
 app.use(cors({ origin: allowedOrigins }));
