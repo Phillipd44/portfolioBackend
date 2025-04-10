@@ -14,8 +14,10 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+const allowedOrigins = ['https://portfolio-phillipd44s-projects.vercel.app'];
+
 const app = express();
-app.use(cors());
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 const port = process.env.PORT || 5000;
